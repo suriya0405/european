@@ -1,0 +1,30 @@
+.faq-section .accordion .accordion-item .accordion-header .accordion-button {
+    color: #fff;
+    background: rgba(1, 95, 201, .8);
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s;
+}
+.container-fluid .faq-section{
+  background-color: #176ea8;
+}
+.faq-section .text-header
+{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.faq-section .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    color: var(--bs-primary);
+    background: var(--bs-light);
+}
+
+@media (max-width: 768px) {
+  .faq-section .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 16px;
+  }
+  .faq-section .text-header
+  {
+    font-size: 2rem;
+    font-weight: 500;
+}
+}
+

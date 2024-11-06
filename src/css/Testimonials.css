@@ -1,0 +1,220 @@
+.heading {
+    position: relative;
+}
+
+.testimonials {
+   
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px 0 70px;
+    color: #2a3070;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-tesi{
+    width: 70%;
+   
+}
+.testimonials:before {
+    background: #1a1f50;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+
+.testimonials .heading h2 span {
+    color: #ff0000;
+}
+
+.testimonials p {
+    font-size: 20px;
+    width: 100%;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #ffffff;
+    padding: 0;
+    
+}
+.tesi-para
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+}
+@media (max-width:768px) {
+  
+}
+
+/* Image */
+.testimonials .carousel-inner .carousel-item .team {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #ffcb05;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 50px 0 15px;
+}
+
+.testimonials .carousel-inner .carousel-item h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+@media(max-width:768px) {
+    .testimonials h3 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .testimonials .carousel-inner .carousel-item .team {
+        width: 100px;
+        height: 100px;
+    }
+    .testimonials p {
+        font-size: 14px;
+        margin-top: 0px;
+
+    }
+    .carousel-control-prev-icon
+{
+    width: 20px;
+    height: 20px;
+}
+.carousel-control-next-icon
+{
+    width: 20px;
+    height: 20px;
+}
+   .container-tesi{
+   width: 100%;
+   }
+
+}
+
+.testimonials .carousel-inner .carousel-item h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffcb05;
+    margin-bottom: 20px;
+}
+
+@media(max-width:768px) {
+    .testimonials h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 0%;
+    }
+}
+
+.testimonials .carousel-indicators {
+    bottom: -30px;
+}
+
+.testimonials .carousel-indicators li {
+    background-color: #161414;
+    border-radius: 30px;
+    height: 4px;
+    width: 40px;
+}
+
+.testimonials .carousel-indicators .active {
+    background-color: #2a3070;
+}
+
+.testimonials .control span {
+    cursor: pointer;
+}
+
+.testimonials .icon {
+    height: 40px;
+    width: 40px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: transparent;
+    color: #ffffff;
+}
+.text-inner
+{
+    box-shadow:inset 0px 0px  30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding-bottom: 3%;
+}
+.carousel-control-prev-icon
+{
+}
+.carousel-control-next-icon
+{
+   
+}
+
+
+
+
+
+
+.success-stories {
+    background:  #1a1f50;
+    padding: 50px 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.success-stories h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ffcb05; /* Adding a contrasting color for the heading */
+    animation: fadeIn 2s ease-in-out; /* Adding a fade-in effect */
+}
+
+.success-stories p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    width: 80%;
+    margin: 0 auto;
+    animation: slideIn 2s ease-in-out; /* Adding a slide-in effect for paragraph */
+}
+
+@media (max-width: 768px) {
+    .success-stories h2 {
+        font-size: 2rem;
+    }
+    .success-stories p {
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+
+/* Keyframes for the animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,151 @@
+
+
+.flyout-container {
+    position: relative;
+  }
+  
+  .flyout-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .flyout-text {
+    width: 200px;
+    height: auto;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 0px;
+    right: -275px;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: block; /* Ensure it's displayed */
+  }
+  .flyout-text p{
+    position: relative;
+    top: 120px;
+  }
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .menus div{
+    width: 78px;
+    height: 108px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.home:hover{
+    
+}
+.menus div img
+{
+    width: 40px;
+    height: 40px;
+   border-radius: 50%;
+}
+.home{
+    background-color: #50c5ff;
+}
+.contact
+{
+    background-color: #3399ff;
+}
+.about
+{
+    background-color: #0066cc;
+}
+.hostal
+{
+    background-color: #003399;
+}
+.gallery{
+    background-color: #000049;
+}
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    left: -75px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+ 
+    color: white;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+  .tooltip a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+  .home-tooltip
+  {
+    position: absolute;
+    top: 9px;
+    background-color: #50c5ff;
+   
+  }
+  .contact-tooltip{
+    position: absolute;
+    top: 115px;
+    background-color: #3399ff;
+  }
+  .about-tooltip{
+    position: absolute;
+    top: 225px;
+    background-color: #0066cc;
+  }
+  .hostel-tooltip{
+    position: absolute;
+    top: 334px;
+    background-color: #003399;
+  }
+  .gallery-tooltip{
+    position: absolute;
+    top: 438px;
+    background-color: #000049;
+  }
+  /* Show tooltip on hover with smooth transition */
+  .menu-item:hover .tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .home-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .contact-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .about-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .hostel-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .gallery-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }

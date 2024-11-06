@@ -1,0 +1,57 @@
+
+.popup .modal-content {
+  border: 2px solid #007bff; 
+  border-radius: 8px; 
+  width: 100%;
+}
+@media (max-width:768px)
+{
+  .popup .modal-content{
+    width: 70%;
+  }
+}
+
+.modal-content p {
+    padding-top: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #333; 
+    margin: 0 0 1.5rem; 
+    text-align: center; 
+  }
+  /* Form control styling */
+.popup .form-control {
+    margin-bottom: 0; /* Space between form controls */
+    padding: 0.75rem; /* Padding inside form controls */
+    font-size: 1rem; /* Font size for form controls */
+    border-radius: 5px; /* Rounded corners for form controls */
+  }
+  .disable-button{
+    display: none;
+  }
+  /* Button styling */
+  .popup .btn-primary {
+    width: 100%; /* Full width button */
+    font-size: 1rem; /* Button text size */
+    padding: 5px ; /* Button padding */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove border */
+  }
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .modal-content p {
+      font-size: 0.8rem; /* Slightly smaller font size for smaller screens */
+      padding: 0 1rem;
+       /* Add padding to the sides for better readability */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .modal-content p {
+      font-size: 0.8rem; /* Further reduce font size for very small screens */
+    }
+    .popup .form-control {
+        font-size: 0.9rem; /* Slightly smaller font size for form controls */
+      }
+  }

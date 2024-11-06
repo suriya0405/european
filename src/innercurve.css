@@ -1,0 +1,13 @@
+.outer-cureve
+{
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    -webkit-mask-image: radial-gradient(circle 10px at 0 0, transparent 0, transparent 20px, black 21px);
+}
+
+
+.inner-cureve
+{  
+    background-color: blueviolet;
+}

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+
+/* Main container for split panes */
+.split-pane-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+.uiux-side,
+.frontend-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+   width:100vw;
+    height: 100vh;
+}
+
+/* Background images for each side */
+.uiux-side {
+    background-image: url('../img/NExT\ Page\ -\ Royal\ Glo\ Next\ -\ Left.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.frontend-side {
+    background-image: url('../img/NExT\ Page\ -\ Royal\ Glo\ Next\ -\ Right.png');
+}
+
+@media(max-width:768px)
+{
+    .uiux-side {
+        background-image: url('../img/Background\ -\ 960x1080\ \(1\).png');
+        }
+        .frontend-side {
+            background-image: url('../img/Background\ -\ 960x1080\ \(1\).png');
+        }
+}
+button,
+.button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.button:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.program-details {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    max-width: 650px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.program-details h3 {
+    font-size: 2.3rem;
+    margin-top: 15px;
+    color: #ffdd57;
+}
+@media(max-width: 768px)
+{
+    .program-details h3 {
+        font-size: 1.5rem;
+    }
+    .program-details ul {
+        font-size: 14px !important;
+    }
+
+}
+.program-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.program-details ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.program-details p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+#split-pane-or {
+    font-size: 2rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust the split pane container for vertical stacking */
+    .split-pane-container {
+        flex-direction: column;
+        /* Stack the panes vertically */
+        width: 100vw;
+        /* Full viewport width */
+        height: 100%;
+        /* Allow panes to stack vertically */
+        overflow-x: hidden;
+        /* No horizontal scrolling */
+        overflow-y: auto;
+        /* Allow vertical scrolling */
+    }
+
+    /* Ensure each pane takes full width and auto height */
+    .uiux-side,
+    .frontend-side {
+        width: 100vw;
+        /* Each pane takes full width of viewport */
+        height: auto;
+        /* Let the height adjust based on content */
+        flex: none;
+        /* Prevent flex shrinking */
+        background-size: cover;
+    }
+
+    .text-content .bold {
+        font-size: 1.2rem;
+    }
+
+    .text-content .big {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust button size for mobile */
+    button,
+    .button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    /* Program details should take full width on mobile */
+    .program-details {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Adjust split pane separator */
+    #split-pane-or {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+}
+
+/**/
+
+.area {
+    background: rgba(255, 255, 255, 0.274);
+    width: 600px; /* or any other value */
+    height: 100%; /* Set a specific height */
+    overflow: auto; /* Ensure overflow is set */
+}
+  
+@media(max-height:768px)
+{
+    .area
+    {
+        width: 350px;
+    }
+}
+  .ss-wrapper {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    float: left;
+  }
+  
+  .ss-content {
+    height: 100%;
+    width: 100%;
+    padding: 0 32px 0 0;
+    position: relative;
+    right: -18px;
+    overflow: auto;
+    box-sizing: border-box; /* No vendor prefixes needed */
+  }
+  
+  .ss-scroll {
+    position: relative;
+    background: rgba(0, 0, 0, .1);
+    width: 9px;
+    border-radius: 4px;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.25s linear;
+  }
+  
+  .ss-container:hover .ss-scroll {
+    opacity: 1;
+  }
+  
+  .ss-grabbed {
+    user-select: none;
+  }
+/**/

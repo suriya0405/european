@@ -1,0 +1,94 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+
+}
+
+.navbar-logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.logo-img {
+    width: 110px;
+    height: 110px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-link {
+    color: #03035e;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: color 1.3s;
+}
+
+.navbar-link:hover {
+    color: #aaa;
+}
+
+/* Toggle button for mobile */
+.navbar-toggle {
+    display: none;
+    /* Only show on smaller screens */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.toggle-icon {
+    width: 30px;
+    /* Adjust icon size */
+    height: 30px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        /* Hide navbar links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: #5e5c61;
+        /* Background color for the menu */
+        width: 100%;
+        padding: 2rem 0;
+
+    }
+
+    .navbar {
+        z-index: 99;
+        position: relative;
+    }
+
+    .navbar-links.active {
+        padding-inline: 20%;
+        display: flex;
+
+        /* Show navbar links when menu is toggled */
+    }
+
+    .navbar-toggle {
+        display: block;
+        /* Show the toggle button on small screens */
+    }
+}
