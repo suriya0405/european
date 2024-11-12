@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 400px;
+    max-width: 700px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 65px;
@@ -156,7 +156,8 @@
 .d-none.d-xl-flex.flex-shrink-0.ps-4 {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 0px;
+
 }
 
 .navbar-custom {
@@ -168,7 +169,7 @@
 }
 
 .d-none.d-xl-flex.flex-shrink-0.ps-4 .btn {
-    margin-left: 40px;
+    margin-left: 350px;
 }
 
 .d-none.d-xl-flex.flex-shrink-0.ps-4 .text-dark {

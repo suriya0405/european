@@ -28,7 +28,10 @@ export const Navbar = () => {
                                 <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
                                     <li className='nav-li'><a className='nav-a' href="/home">Home</a></li>
                                     <li className='nav-li'><a className='nav-a' href="about">About</a></li>
+                                    <li className='nav-li'><a className='nav-a' href="Hostel" >Hostel</a></li>
+                                    <li className='nav-li'><a className='nav-a' href="/Gallary" >Gallary</a></li>
                                     <li className='nav-li'><a className='nav-a' href="/contact" >Contact</a></li>
+                                    <li className='nav-li'><a className='nav-a' href="/enquire" >Enquire</a></li>
                                 </ul>
                             </div>
                         </nav>

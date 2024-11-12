@@ -1,7 +1,57 @@
-/* src/css/Footer.css */
 .footer {
-    background: #2f2f2f;
+    background: #1e3651;
     color: white;
+    padding-left: 0%;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribute columns evenly */
+    padding-bottom: 100px;
+
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -360px;
+
+}
+
+.row {
+    --cui-gutter-x: 8.5rem;
+}
+
+.footer .location,
+.footer .about-company,
+.footer .links {
+    flex: 1;
+    /* Ensures equal spacing across columns */
+    min-width: 250px;
+    /* Minimum width to keep items aligned on smaller screens */
+    margin-top: 55px;
+    margin-bottom: -60px;
+}
+
+.footer .about-company {
+    text-align: center;
+    /* Center the About Us section */
+    margin-top: 55px;
+    margin-bottom: -100px;
+}
+
+.footer .about-company h2,
+.footer .about-company p {
+    text-align: center;
+    /* Center text within the About Us section */
+}
+
+.footer .links {
+    text-align: right;
+    /* Align Links section to the right */
 }
 
 .footer .links ul {
@@ -20,23 +70,65 @@
     color: #4180CB;
 }
 
-.footer .about-company i {
-    font-size: 25px;
-}
-
-.footer .about-company a {
+.footer .social-media a {
     color: white;
+    margin-right: 10px;
     transition: color 0.2s;
 }
 
-.footer .about-company a:hover {
+.footer .social-media a:hover {
     color: #4180CB;
-}
-
-.footer .location i {
-    font-size: 18px;
 }
 
 .footer .copyright p {
     border-top: 1px solid rgb(225, 211, 211);
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+    .footer .container,
+    .footer .row {
+        flex-direction: column;
+        /* Stack columns on smaller screens */
+        align-items: center;
+        /* Center all columns */
+    }
+
+    .footer .location,
+    .footer .about-company,
+    .footer .links {
+        text-align: center;
+        /* Center text on smaller screens */
+    }
+}
+
+.copyright p {
+    text-align: center;
+    width: 100vw;
+
+
+}
+
+.location h2,
+p {
+    text-align: left;
+}
+
+.links ul li,
+h4 {
+    text-align: left;
+}
+
+.about-company h2,
+p {
+    text-align: left;
+
+}
+
+.social-media {
+    padding-bottom: 2%;
 }

@@ -49,14 +49,15 @@ function App() {
     <div className="App">
       <Router>
         <Layout>
+          <Popup />
           <Routes>
             <Route path="/home" element={<Home />} />
-
             <Route path="/LearnMore" element={<LearnMore />} />
             <Route path="/Aboutus" element={<Aboutus />} />
             <Route path="/contact" element={<ContactUs1 />} />
           </Routes>
         </Layout>
+
       </Router>
 
     </div>

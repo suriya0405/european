@@ -50,10 +50,10 @@ function ContactUs1() {
                         No 810, B Block, Hili tower, Al nadha, Sharjah, UAE.</p>
                 </div>
                 <div className="social-icons">
-                    <a href="#" className="social-icon"><img className='image' src={X} /></a> {/* Twitter Icon */}
-                    <a href="#" className="social-icon"><img className='image' src={fb} /></a> {/* Facebook Icon */}
+                    <a href="https://twitter.com/Royalnextoff" className="social-icon"><img className='image' src={X} /></a> {/* Twitter Icon */}
+                    <a href="https://www.facebook.com/royalglonextacademy" className="social-icon"><img className='image' src={fb} /></a> {/* Facebook Icon */}
                     <a href="https://www.youtube.com/channel/UCXEIdPJUowws2aQ58rFv72A" className="social-icon" ><img className='image' src={youtube} /></a> {/* Google Icon */}
-                    <a href="#" className="social-icon"><img className='image' src={insta} /></a> {/* Instagram Icon */}
+                    <a href="https://www.instagram.com/royalglonextacademy/?hl=en" className="social-icon"><img className='image' src={insta} /></a> {/* Instagram Icon */}
                 </div>
 
                 <div className="map-container">

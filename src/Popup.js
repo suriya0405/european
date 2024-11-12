@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 import './popup.css';
-import './css/capstyle.css'; 
+import './css/capstyle.css';
 import axios from 'axios';
+import logo from './img/Royal Glo Next logo for website 512 x 512.png';
 
 export const Popup = () => {
     const [show, setShow] = useState(false);
@@ -16,11 +17,12 @@ export const Popup = () => {
     const [userInput, setUserInput] = useState('');
     const [isVerified, setIsVerified] = useState(false);
     const canvasRef = useRef(null);
+    const [isChecked, setIsChecked] = useState(true);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setShow(true);
-        }, 10000);
+        }, 3000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -31,7 +33,7 @@ export const Popup = () => {
                 initializeCaptcha(ctx);
             }
         }
-    }, [show]); // Depend on 'show' to ensure modal is fully rendered
+    }, [show]);
 
     const handleClose = () => setShow(false);
 
@@ -46,14 +48,12 @@ export const Popup = () => {
     };
 
     const handleSubmit = (e) => {
-      console.log('handleSubmit called');
         e.preventDefault();
         if (userInput !== captchaText) {
-          alert('Incorrect captcha. Please try again.'); // Alert message for incorrect captcha
-          const canvas = canvasRef.current;
-          const ctx = canvas.getContext('2d');
-          initializeCaptcha(ctx); // Reset captcha on incorrect input
-          return; // Exit the function early if captcha is incorrect
+            alert('Incorrect captcha. Please try again.');
+            const ctx = canvasRef.current.getContext('2d');
+            initializeCaptcha(ctx);
+            return;
         }
         sendEmail();
         handleClose();
@@ -93,95 +93,112 @@ export const Popup = () => {
 
     const handleUserInputChange = (e) => {
         setUserInput(e.target.value);
-        if (e.target.value === captchaText) {
-            setIsVerified(true);
-        } else {
-            setIsVerified(false);
-            
-        }
+        setIsVerified(e.target.value === captchaText);
+    };
+
+    const handleCheckboxChange = (event) => {
+        setIsChecked(event.target.checked);
     };
 
     return (
         <div>
             <Modal className='popup' show={show} onHide={handleClose} centered>
-                <Modal.Header closeButton></Modal.Header>
+                <Modal.Header className='header' closeButton>
+                    <img src={logo} alt="Logo" />
+                    <p className='para'>Register For Free Counseling</p>
+                </Modal.Header>
                 <Modal.Body>
-                    <p>Got questions or doubts? Our expert counselors are here to clear them up! Honest advice, guaranteed admissions, and no need for donations—Just good vibes and solid answers.</p>
+                    <p>Let Our Expert Counsellor''s help you and answer you all questions/doubts.As always, We give Honest Advice, Guaranteed Admission, No Donation.<i className="fa fa-phone" id="i_fd84_0"></i></p>
                     <p><a href='/'><i className="fa fa-phone" id="i_fd84_0"></i>+91 9962705000</a></p>
-                    <Form className='form-container' onSubmit={handleSubmit}>
+                    <Form className='form-container-popup' onSubmit={handleSubmit}>
                         <Form.Group controlId="formName">
                             <Form.Control
                                 type="text"
                                 name="name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                placeholder='Name'
-                               
+                                placeholder='Enter Name *'
                             />
                         </Form.Group>
-                        <Form.Group controlId="formmobile">
-                            <Form.Control
-                                type="text"
-                                name="mobile"
-                                value={mobile}
-                                onChange={(e) => setMobile(e.target.value)}
-                                placeholder='Mobile No'
-                              
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="formaddress">
+                        <Form.Group controlId="">
                             <Form.Control
                                 type="text"
                                 name="district"
                                 value={address}
                                 onChange={(e) => setAddress(e.target.value)}
-                                placeholder='District'
-                               
+                                placeholder='District '
                             />
                         </Form.Group>
-                        <Form.Group controlId="formneet">
+                        <Form.Group controlId="formName">
                             <Form.Control
                                 type="text"
                                 name="neet"
                                 value={neet}
                                 onChange={(e) => setNeet(e.target.value)}
                                 placeholder='NEET Score'
-                             
                             />
                         </Form.Group>
-                        <Form.Group controlId="formMessage">
+                        <div style={{ display: 'flex' }}>
+                            <Form.Control as="select" style={{ width: '20%' }}>
+                                <option>+91</option>
+                            </Form.Control>
                             <Form.Control
-                                as="textarea"
-                                name="message"
-                                value={message}
-                                onChange={(e) => setMessage(e.target.value)}
-                                placeholder='Message'
-                                rows={3}
-                              
-                            />
-                        </Form.Group>
-                        
-                        {/* Captcha Section */}
-                        <div className="container">
-                            <div className="wrapper">
-                                <canvas ref={canvasRef} width="200" height="40"></canvas>
-                                <button id="reload-button" type="button" onClick={() => initializeCaptcha(canvasRef.current.getContext('2d'))}>
-                                    Reload
-                                </button>
-                            </div>
-                            <input
                                 type="text"
-                                id="user-input"
-                                placeholder="Enter the text in the image"
-                                value={userInput}
-                                onChange={handleUserInputChange}
-                              
+                                name="mobile"
+                                value={mobile}
+                                onChange={(e) => setMobile(e.target.value)}
+                                placeholder="Enter Mobile Number *"
+                                style={{ width: '80%' }}
+                                maxLength={10} // Restrict to 10 digits
+                                onInput={(e) => {
+                                    e.target.value = e.target.value.replace(/[^0-9]/g, ''); // Allow only numbers
+                                }}
                             />
                         </div>
-                        
-                        {/* Single Submit Button */}
-                        <Button variant="primary" type="submit" className="mt-3 mb-10" >
-                            Submit
+                        <Form.Group controlId="formEmail">
+                            <Form.Control
+                                type="email"
+                                placeholder="Enter Email Address *"
+                            />
+
+                        </Form.Group>
+                        {/* <Form.Group controlId="formStateCity">
+                            <Form.Control as="select" className="mb-2">
+                                <option>Select State</option>
+                                                      Add state options
+                            </Form.Control>
+                            <Form.Control as="select">
+                                <option>Select City</option>
+                                              Add city options
+                            </Form.Control>
+                        </Form.Group> */}
+                        <div className="captcha-container">
+                            <canvas ref={canvasRef} width="200" height="40"></canvas>
+                            <button type="button" className='capcha-btn' onClick={() => initializeCaptcha(canvasRef.current.getContext('2d'))}>
+                                Reload
+                            </button>
+                        </div>
+                        <Form.Control
+                            type="text"
+                            placeholder="Enter the text in the image"
+                            value={userInput}
+                            onChange={handleUserInputChange}
+                        />
+                        <Form.Group>
+                            <Form.Check
+                                type="checkbox"
+                                checked={isChecked}
+                                onChange={handleCheckboxChange}
+                                label={
+                                    <>
+                                        Do you want us to send you Brochure’s, Fees Structure’s, YouTube - Video Links & Complete Information on your WhatsApp
+                                        <br /><br /><strong>Note: We do not share your contact details; we respect your privacy.</strong>
+                                    </>
+                                }
+                            />
+                        </Form.Group>
+                        <Button variant="primary" type="submit" className="mt-3">
+                            Send
                         </Button>
                         <p>{status}</p>
                     </Form>
