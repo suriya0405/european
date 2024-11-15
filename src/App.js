@@ -16,6 +16,7 @@ import LearnMore from './pages/LearnMore';
 // import Flyout from './pages/Flyout';
 import ContactUs1 from './pages/ContactUs1';
 import Layout from './pages/Layout';
+import { European } from './pages/European';
 
 
 
@@ -57,7 +58,6 @@ function App() {
             <Route path="/contact" element={<ContactUs1 />} />
           </Routes>
         </Layout>
-
       </Router>
 
     </div>

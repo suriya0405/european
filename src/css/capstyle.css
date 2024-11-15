@@ -59,17 +59,26 @@ button#submit-button:hover {
 }
 
 .capcha-btn {
-    font-size: 12px;
+    font-size: 10px;
     width: 10em;
     background-color: rgb(21, 3, 101);
     cursor: pointer;
     border: none;
     border-radius: 0.4em;
     color: #ffffff;
-    margin-left: 144px;
-    margin-bottom: 5%;
+    margin-left: 138px;
+    margin-bottom: 2%;
+    height: 3.5em;
+    padding-top: 1px;
 }
 
 .capcha-btn:hover {
     background-color: rgb(53, 175, 53);
 }
+
+/* @media (max-width: 576px) {
+    .capcha-btn {
+        margin: bottom 10px;
+        ;
+    }
+} */

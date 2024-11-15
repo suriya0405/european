@@ -16,6 +16,7 @@ import Testimonials from './pages/Testimonials';
 import { Whatsapp } from './pages/Whatsapp';
 import { European } from './pages/European';
 import FlipBoxContainer from './pages/FlipBoxContainer'
+import { Popup } from 'react-leaflet';
 // import Contact from './pages/ContactUs1';
 
 export const Home = () => {
