@@ -1,0 +1,46 @@
+.welcome-page {
+    height: 100vh;
+    background-image: url('C:\Users\jenif\OneDrive\Desktop\european\src\img\european-university-1024x576.jpg');
+    /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.welcome-title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.welcome-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.explore-button {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #004080;
+}
