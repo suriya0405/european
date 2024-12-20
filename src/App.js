@@ -10,13 +10,15 @@ import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
 import { Home } from './Home';
 import { Popup } from './Popup';
+import PopupForm from './popupform';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Aboutus } from './pages/Aboutus';
 import LearnMore from './pages/LearnMore';
 // import Flyout from './pages/Flyout';
 import ContactUs1 from './pages/ContactUs1';
 import Layout from './pages/Layout';
-import { European } from './pages/European';
+
+// import { European } from './pages/European';
 
 
 
@@ -51,6 +53,7 @@ function App() {
       <Router>
         <Layout>
           <Popup />
+          {/* <PopupForm /> */}
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/LearnMore" element={<LearnMore />} />
@@ -65,3 +68,17 @@ function App() {
 }
 
 export default App;
+
+
+
+
+// import './App.css';
+// import { Popup } from './popup2';
+// function App() {
+//   return (
+//     <div className="App">
+//       <Popup />
+//     </div>
+//   );
+// }
+// export default App;

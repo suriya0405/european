@@ -1,0 +1,182 @@
+.popup .modal-content {
+    border: 10px solid #0457ae;
+    border-radius: -3px;
+    width: 96%;
+
+}
+
+.popup img {
+    width: 75px;
+    height: 75px;
+
+}
+
+@media(max-width:768px) {
+    .popup img {
+        margin-top: -5px;
+        margin-bottom: -25px;
+    }
+}
+
+.header .para {
+    position: relative;
+    left: 2%;
+    bottom: 35%;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: x-large;
+    text-shadow: #0b0b0b;
+
+}
+
+@media (max-width:768px) {
+    .header .para {
+        top: -50px;
+        left: 5%;
+        margin-bottom: -74px;
+    }
+}
+
+
+/* 
+  .modal-content {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    max-width: 400px;
+  
+  } */
+
+/* 
+  .form-container {} */
+
+@media (max-width:768px) {
+    .popup .modal-content {
+        width: 80%;
+    }
+}
+
+.modal-content p {
+    padding-top: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    margin: 0 0 .5rem;
+    text-align: left;
+
+}
+
+
+/* Form control styling */
+.popup .form-control {
+
+    margin-bottom: .40rem;
+    /* Space between form controls */
+    padding: 0.5rem;
+    /* Padding inside form controls */
+    font-size: 0.8rem;
+    font-family: inherit;
+    /* Font size for form controls */
+    border-radius: 5px;
+    /* Rounded corners for form controls */
+}
+
+.form-container {
+    align-items: center;
+}
+
+.disable-button {
+    display: none;
+}
+
+/* Button styling */
+.popup .btn-primary {
+    width: 37%;
+    font-size: 1rem;
+    padding: 8px;
+    /* Button padding */
+    background-color: #007bff;
+    /* Button background color */
+    border: none;
+    /* Remove border */
+    position: relative;
+    margin-left: 28%;
+
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .modal-content p {
+        font-size: 0.8rem;
+        /* Slightly smaller font size for smaller screens */
+        padding: 0 1rem;
+        /* Add padding to the sides for better readability */
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-content p {
+        font-size: 13.9px;
+
+        /* Further reduce font size for very small screens */
+    }
+
+    .popup .form-control {
+        font-size: 1.1rem;
+        /* Slightly smaller font size for form controls */
+    }
+}
+
+.agree-condition {
+    padding-top: 0px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #333;
+    margin: 0 0 1.5rem;
+    text-align: center;
+
+}
+
+.agree-condition p {
+    font-size: x-large;
+    background-color: #007bff;
+}
+
+.form-container-popup {
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.phone-link {
+    margin-left: 215px;
+}
+
+@media (max-width:768px) {
+    .phone-link {
+        margin-left: 100px;
+    }
+}
+
+.checkbox-label {
+    font-size: 1rem;
+}
+
+@media(max-width:768px) {
+    .checkbox-label {
+        font-size: 13.9px;
+    }
+}

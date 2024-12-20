@@ -1,5 +1,5 @@
 import React from 'react';
-import './WelcomePage.css'; // CSS for styling
+import '../css/EurUniversity.css'; // CSS for styling
 
 const WelcomePage = () => {
     return (
