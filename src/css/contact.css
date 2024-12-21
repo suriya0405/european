@@ -4,10 +4,7 @@
   margin-left: 5%;
   position: relative;
   top: 5%;
-<<<<<<< HEAD
   margin-right: 5% ;
-=======
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 @media (max-width: 768px) {
   .map-container {
@@ -19,10 +16,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 .form-container
 {
   width: 80%;
@@ -48,11 +41,7 @@
    position: 'relative';
     width: '100%';
      height: '450px';
-<<<<<<< HEAD
       overflow: 'hidden';
-=======
-      overflow: 'hidden'
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
      }
 
 .map-title {
@@ -64,10 +53,7 @@
   padding: 5px 10px;
   border-radius: 5px;
   z-index: 10;
-<<<<<<< HEAD
   
-=======
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 @media (max-width:768px)
 {

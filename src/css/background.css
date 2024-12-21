@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(45deg, rgb(246, 246, 248), rgb(255, 255, 255));
-<<<<<<< HEAD
   padding: 8%;
  
 }
@@ -27,9 +26,6 @@
   justify-content: center;
   align-items: center;
  
-=======
-  padding: 5%;
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 .img-holder {
@@ -45,7 +41,6 @@
   text-align: left;
 }
 
-<<<<<<< HEAD
   .line-A {
     width: 21%;
     border-top: 0.1rem solid rgba(255, 255, 255, 0.733);
@@ -102,35 +97,11 @@
   width: 90%;
   text-align: justify;
   font-size: 16px;
-=======
-
-.line {
-  width: 90%;
-  border-top: 0.1rem solid rgba(0, 0, 71, 0.603);
-}
-
-.line-A {
-  width: 90%;
-  border-top: 0.1rem solid rgba(255, 255, 255, 0.733);
-  margin-bottom: 7px;
-  margin-top: 7px;
-}
-
-
-.text-overlay p {
-  margin-top: 5%;
-  color: rgba(0, 0, 71, 0.973);
-  width: 90%;
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 .text-overlay h1 {
   font-weight: 700;
-<<<<<<< HEAD
   color: #2a3070;
-=======
-  color: rgb(0, 0, 71);
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 .paragraph {
@@ -156,24 +127,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   padding-top: 7%;
   padding-bottom: 7%;
 }
 .apply-container {
   height: 450px;
   width: 500px;
-=======
-}
-.apply-container {
-  height: 450px;
-  width: 450px;
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
   background-color: #535f80;
   display: flex;
   justify-content: center;
@@ -184,19 +147,6 @@
 .apply-container h1 {
   font-size: 38px;
   color: rgb(255, 205,  5);
-=======
-  text-align: center;
-  background-color: #535f80;
-  border: 0.2rem solid #002147f5 ;
-  display: flex;
-  justify-content: center;
-}
-
-.apply-container h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 38px;
-  color: rgb(255, 255, 255);
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 .apply-container-para
@@ -204,53 +154,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   text-align: justify ;
   font-size: 14px;
-=======
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
   
 }
 
 .apply-container p {
-<<<<<<< HEAD
   width: 73%;
   color: rgba(255, 255, 255, 0.973);
   padding: 2px;
   margin-top: 4px;
   text-align: justify;
-=======
-  width: 70%;
-  color: rgba(255, 255, 255, 0.973);
-  padding: 2px;
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 /* Animated Apply Button */
 .apply-btn {
-<<<<<<< HEAD
   
   color: #2a3070; /* Oxford Blue text */
   background-color: white;
   padding: 10px 20px;
   font-size: 16px;
   width: 150px;
-=======
-  font-family: 'Playfair Display', serif;
-  color: #002147; /* Oxford Blue text */
-  background-color: white;
-  padding: 10px 20px;
-  border: 2px solid #002147; /* Oxford Blue border */
-  font-size: 16px;
-  width: 200px;
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
   display: inline-block;
   cursor: pointer;
   transition: all 0.4s ease; /* Smooth transition */
-<<<<<<< HEAD
   font-weight: 600;
   border: none;
   margin-top: 5%;
@@ -273,27 +203,6 @@
   width: 3%;
   position: relative;
   top: -5%; 
-=======
-}
-
-.apply-btn::before, .apply-btn::after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 0;
-  background-color: #002147; /* Color for the animated border */
-  top: 0;
-  left: 0;
-  transition: width 0.4s ease;
-}
-
-.apply-btn::after {
-  right: 0;
-  left: auto;
-  width: 0;
-  background-color: #002147; /* Color for the animated border */
-  transition: width 0.4s ease;
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 .apply-btn:hover::before {
@@ -305,13 +214,8 @@
 }
 
 .apply-btn:hover {
-<<<<<<< HEAD
   color: #2a3070;
   background-color: rgb(255, 205,  5);
-=======
-  color: white;
-  background-color: #002147;
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
   transition: all 0.4s ease; /* Smooth transition */
 }
 .img-holder-apply img
