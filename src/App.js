@@ -67,8 +67,7 @@ function App() {
         <Homeyoutube />
         <Footer1 />
       </Router>     
-     
-      <Useeffect />
+
 
     </div>
   );
