@@ -17,11 +17,7 @@ L.Icon.Default.mergeOptions({
 
 export const Contact = () => {
 
-<<<<<<< HEAD
   
-=======
- 
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
   return (
     <div>
@@ -59,11 +55,7 @@ export const Contact = () => {
         width="100%" height="100%" style={{ border: '0' }} allowFullScreen loading="lazy"  title="Google Maps location of European University Georgia"  referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
     <div style={{ position: 'absolute', bottom: '20px', right: '20px', fontSize: '24px', zIndex: 20 }}>
-<<<<<<< HEAD
         
-=======
-        📍
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
     </div>
 </div>
 

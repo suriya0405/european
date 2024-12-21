@@ -10,17 +10,10 @@ const Footer1 = () => {
                     <div className="col-lg-5 col-xs-12 about-company">
                         <h2>About Us</h2>
                         <p className="pr-5 text-white-50">
-<<<<<<< HEAD
                             We are a leading educational institution committed to excellence in medical education. </p>
                             <div className="social-media">
                                 <a href="https://www.facebook.com/royalglonextacademy" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-facebook-square"></i> 
-=======
-                            We are a leading educational institution committed to excellence in medical education.
-                            <div className="social-media">
-                                <a href="https://www.facebook.com/royalglonextacademy" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-facebook-square"></i>
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
                                 </a>
                                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-linkedin"></i>
@@ -32,11 +25,7 @@ const Footer1 = () => {
                                     <i className="fab fa-youtube"></i>
                                 </a>
                             </div>
-<<<<<<< HEAD
                        
-=======
-                        </p>
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
                     </div>
                     <div className="col-lg-4 col-xs-12 location">
                         <h2 className="mt-lg-0 mt-sm-4">Contact</h2>
@@ -46,11 +35,7 @@ const Footer1 = () => {
                         <p className="mb-0 pr-5 text-white-50"><i className="fa fa-phone mr-3"></i>info@royalnextacademy.com</p>
                         <p className='pr-5 text-white-50'><i className="fa fa-envelope-o mr-3"></i>+91 9962705000</p>
                     </div>
-<<<<<<< HEAD
                     <div className="col-xs-12 links ">
-=======
-                    <div className="col-lg-3 col-xs-12 links ">
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
                         <h4 className="mt-lg-0 mt-sm-4">Links</h4>
                         <ul className="m-0 p-0 ">
                             <li>- <a href="/home">Home</a></li>
@@ -66,11 +51,7 @@ const Footer1 = () => {
             </div>
 
             <div className=" copyright">
-<<<<<<< HEAD
                 <p><small className="text-white-50">© CopyRights 2024. All Rights Reserved.</small></p>
-=======
-                <p><small className="text-white-50">© 2019. All Rights Reserved.</small></p>
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
             </div>
         </div>
 
