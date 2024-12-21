@@ -3,9 +3,12 @@ import '../css/style.css';
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import video from '../img/Orientation program promo 2024 (1).mp4'
+<<<<<<< HEAD
 import { Imagesuffel } from './Imagesuffel';
 import image from '../img/SIR-IMAGE.png';
 import '../css/background.css';
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
 export const Aboutus = () => {
 
@@ -16,15 +19,20 @@ export const Aboutus = () => {
   });
 
   return (
+<<<<<<< HEAD
     <div className='about-css page-container'>
       <div className='title-card'>
 
       </div>
+=======
+    <div className='about-css'>
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
        <div className='class-video'>
           {/*<video src={video}  autoPlay loop muted className="your-video-class">
           Your browser does not support the video tag.
           </video>*/}
           <h1>ROYAL GLO NEXT ACADEMY Pvt Ltd</h1>
+<<<<<<< HEAD
           <p className='scroll-text1'>Academy Life    |    MBBS In Abroad   |    NEET-Coaching   |   Social
 Overall in here</p>
           </div>
@@ -60,6 +68,13 @@ Overall in here</p>
         <div className='remaining-content'>
           <div className='images'>
           <div className='img-holder'>
+=======
+          </div>
+        <div className='remaining-content'>
+          <div className='images'>
+          <div className='img-holder'>
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
           </div>
           <div className='img-holder'>
 
@@ -70,10 +85,13 @@ Overall in here</p>
     
           </div>
           <div className='about-container'>
+<<<<<<< HEAD
    
 
           
 
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
             
             <div className='first-para1'>
@@ -123,11 +141,14 @@ Overall in here</p>
                </div>
           </div>
         </div>
+<<<<<<< HEAD
         <Imagesuffel />
         <div className='aboutimages'>
           <div className='image1'> 1</div>
           <div className='image2'> 2</div>
         </div>
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
     
     </div>
   )

@@ -55,6 +55,7 @@
 }
 .menus div img
 {
+<<<<<<< HEAD
     width: 45px;
     height: 45px;
    border-radius: 50%;
@@ -68,6 +69,11 @@
   font-size: 14px;
   margin-right: 50px;
   margin-left: 10px;
+=======
+    width: 40px;
+    height: 40px;
+   border-radius: 50%;
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 .home{
     background-color: #50c5ff;
@@ -94,6 +100,10 @@
     width: 150px;
     height: 150px;
     padding: 10px;
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
     color: white;
     opacity: 0;
     transform: translateX(-10px);
@@ -118,6 +128,7 @@
     top: 115px;
     background-color: #3399ff;
   }
+<<<<<<< HEAD
   @media(max-width:768px)
   {
     .contact-tooltip
@@ -133,11 +144,14 @@
       border: 0.1rem solid #000049;
     }
   }
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
   .about-tooltip{
     position: absolute;
     top: 225px;
     background-color: #0066cc;
   }
+<<<<<<< HEAD
   @media(max-width:768px)
   {
     .about-tooltip
@@ -145,11 +159,14 @@
       top: 107px;
     }
   }
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
   .hostel-tooltip{
     position: absolute;
     top: 334px;
     background-color: #003399;
   }
+<<<<<<< HEAD
   @media (max-width:768px)
   {
     .hostel-tooltip
@@ -157,11 +174,14 @@
       top: 160px;
     }
   }
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
   .gallery-tooltip{
     position: absolute;
     top: 438px;
     background-color: #000049;
   }
+<<<<<<< HEAD
   @media (max-width:768px)
   {
     .gallery-tooltip
@@ -169,6 +189,8 @@
       top: 207px;
     }
   }
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
   /* Show tooltip on hover with smooth transition */
   .menu-item:hover .tooltip {
     opacity: 1;
@@ -193,6 +215,7 @@
   .menu-item:hover .gallery-tooltip {
     opacity: 1;
     transform: translateX(0);
+<<<<<<< HEAD
   }
   @media (max-width: 600px) {
     .tooltip {
@@ -226,3 +249,6 @@
       
     }
   }
+=======
+  }
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02

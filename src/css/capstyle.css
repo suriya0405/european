@@ -1,7 +1,15 @@
 * {
     padding: 0;
+<<<<<<< HEAD
     margin: 0;
     box-sizing: border-box;
+=======
+    margin: 15px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    /* box-sizing: border-box; */
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 body {
@@ -38,7 +46,11 @@ input[type='text'] {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.8rem;
     width: 100%;
+<<<<<<< HEAD
     padding: 12px;
+=======
+    padding: 16px;
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
 }
 
@@ -66,18 +78,26 @@ button#submit-button:hover {
     border: none;
     border-radius: 0.4em;
     color: #ffffff;
+<<<<<<< HEAD
     margin-left: 200px;
     margin-bottom: 2%;
     height: 3.5em;
     padding-top: 1px;
     margin-top: -57px;
    
+=======
+    margin-left: 138px;
+    margin-bottom: 2%;
+    height: 3.5em;
+    padding-top: 1px;
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 .capcha-btn:hover {
     background-color: rgb(53, 175, 53);
 }
 
+<<<<<<< HEAD
 @media (max-width: 576px) {
     .capcha-btn {
         position: relative;
@@ -89,3 +109,11 @@ button#submit-button:hover {
 {
     height: 50px;
 }
+=======
+/* @media (max-width: 576px) {
+    .capcha-btn {
+        margin: bottom 10px;
+        ;
+    }
+} */
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02

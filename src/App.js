@@ -9,6 +9,7 @@ import './lib/lightbox/css/lightbox.min.css';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
 import { Home } from './Home';
+<<<<<<< HEAD
 import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import { Aboutus } from './pages/Aboutus';
 import LearnMore from './pages/LearnMore'; 
@@ -29,6 +30,24 @@ import { Useeffect } from './unwanted/Useeffect';
 
 
  
+=======
+import { Popup } from './Popup';
+import PopupForm from './popupform';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Aboutus } from './pages/Aboutus';
+import LearnMore from './pages/LearnMore';
+// import Flyout from './pages/Flyout';
+import ContactUs1 from './pages/ContactUs1';
+import Layout from './pages/Layout';
+
+// import { European } from './pages/European';
+
+
+
+
+
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 const loadFonts = () => {
   const link1 = document.createElement('link');
   link1.rel = 'preconnect';
@@ -54,6 +73,7 @@ loadFonts();
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
        {/* <Router>
         <Topbar />
        
@@ -69,9 +89,40 @@ function App() {
       </Router>      */}
      
       <Useeffect />
+=======
+      <Router>
+        <Layout>
+          <Popup />
+          {/* <PopupForm /> */}
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/LearnMore" element={<LearnMore />} />
+            <Route path="/Aboutus" element={<Aboutus />} />
+            <Route path="/contact" element={<ContactUs1 />} />
+          </Routes>
+        </Layout>
+      </Router>
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
     </div>
   );
 }
 
 export default App;
+<<<<<<< HEAD
+=======
+
+
+
+
+// import './App.css';
+// import { Popup } from './popup2';
+// function App() {
+//   return (
+//     <div className="App">
+//       <Popup />
+//     </div>
+//   );
+// }
+// export default App;
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02

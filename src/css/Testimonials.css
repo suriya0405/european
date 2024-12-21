@@ -99,18 +99,25 @@
    }
 
 }
+<<<<<<< HEAD
 .make-center
 {
      position: relative;
         top: -20px;
     
 }
+=======
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 .testimonials .carousel-inner .carousel-item h4 {
     font-size: 25px;
     font-weight: 600;
     color: #ffcb05;
     margin-bottom: 20px;
+<<<<<<< HEAD
     text-align: center;
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 @media(max-width:768px) {
@@ -120,21 +127,41 @@
         margin-bottom: 0%;
     }
 }
+<<<<<<< HEAD
 .testimonials .carousel-indicators {
     bottom: -30px;
 }
+=======
+
+.testimonials .carousel-indicators {
+    bottom: -30px;
+}
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 .testimonials .carousel-indicators li {
     background-color: #161414;
     border-radius: 30px;
     height: 4px;
     width: 40px;
 }
+<<<<<<< HEAD
 .testimonials .carousel-indicators .active {
     background-color: #2a3070;
 }
 .testimonials .control span {
     cursor: pointer;
 }
+=======
+
+.testimonials .carousel-indicators .active {
+    background-color: #2a3070;
+}
+
+.testimonials .control span {
+    cursor: pointer;
+}
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 .testimonials .icon {
     height: 40px;
     width: 40px;
@@ -150,6 +177,22 @@
     border-radius: 10px;
     padding-bottom: 3%;
 }
+<<<<<<< HEAD
+=======
+.carousel-control-prev-icon
+{
+}
+.carousel-control-next-icon
+{
+   
+}
+
+
+
+
+
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 .success-stories {
     background:  #1a1f50;
     padding: 50px 20px;
@@ -158,6 +201,10 @@
     position: relative;
     overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 .success-stories h2 {
     font-size: 2.8rem;
     margin-bottom: 20px;

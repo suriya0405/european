@@ -2,7 +2,11 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+<<<<<<< HEAD
    margin-top: 5%;
+=======
+   margin-top: 10%;
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
    margin-bottom: 5%;
    background-color: #fff;
 }
@@ -12,16 +16,24 @@
     width: 100vw;
     height: 100vh;
    margin-top: 13%;
+<<<<<<< HEAD
    margin-bottom: 15%;
    background-color: #fff;
    padding-top: 4%;
   
+=======
+   margin-bottom: 5%;
+   background-color: #fff;
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 .european {
     position: relative;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     overflow: visible;
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 .european img {
@@ -30,7 +42,11 @@
     object-fit: cover; /* Ensures the image covers the area without distortion */
     position: relative;
     right: -23%;
+<<<<<<< HEAD
     top: -5%;
+=======
+    top: -2%;
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 .european-text {
@@ -38,7 +54,11 @@
     top: 10%;
     left: 37%;
     transform: translate(-50%, -50%); /* Centers the text on the image */
+<<<<<<< HEAD
     color: #2a3070; /* White text for contrast */
+=======
+    color: rgb(0, 17, 92); /* White text for contrast */
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
     text-align: left;
     padding-top: 20px;
 }
@@ -49,13 +69,20 @@
     position: relative;
     left: 55%;
     top: 130px;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
 .european-container
 {
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     margin-bottom: 15%; 
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
    
 }
 .line
@@ -64,12 +91,20 @@
     border-bottom: 0.1re solid #ffffff;
 }
 .european-text h1 {
+<<<<<<< HEAD
     font-size: 2.8rem; 
+=======
+    font-size: 2.8rem; /* Adjust the size as needed */
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
     margin: 0;
 }
 
 .european-text p {
+<<<<<<< HEAD
     font-size: 1.5rem; 
+=======
+    font-size: 1.5rem; /* Adjust the size as needed */
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
     margin-top: 10px;
     font-weight: 500;
 }
@@ -84,17 +119,24 @@
 .text-para
 {
     width: 70%;
+<<<<<<< HEAD
     color: rgb(97, 97, 97);
 }
 
 .container1 {
 
     display: block;
+=======
+}
+
+.container1 {
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
     width: 300px;
     height: 250px;
     border: 0.1rem solid #fff;
     padding: 3%;
     background-color: #1921749d;
+<<<<<<< HEAD
    transition: transfrom 0.4s ease;
 }
 .container1:hover
@@ -102,6 +144,12 @@
     transform: scale(1.0);
 }
 
+=======
+    transition:  color 1.5s ease, transform 0.7s ease; /* Fixed 'transform' */
+}
+
+/* Font styling for each container */
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 .container1, .head2 {
     font-size: 18px;
 }
@@ -111,6 +159,14 @@
     font-weight: 500;
 }
 
+<<<<<<< HEAD
+=======
+.container1:hover {
+
+    transform: scale(1.2); /* Scaling on hover */
+}
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 .container2
 {
     width: 300px;
@@ -123,6 +179,7 @@
 .container2, .head2 {
     font-size: 18px;
 }
+<<<<<<< HEAD
 .head2
 {
     color: rgb(255, 205, 5);
@@ -132,6 +189,8 @@
     color: rgb(0, 0, 117);
     font-size: 18px;
 }
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
 .container2, .para {
     font-size: 14px;
@@ -187,7 +246,11 @@ transform: scale(1.2);
 .features
 { 
     position: absolute;
+<<<<<<< HEAD
     bottom: -58%;
+=======
+    bottom: -45%;
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
     left: 50%;
     transform: translate(-50%, -50%); /* Centers the text on the image */
     color: white;
@@ -196,7 +259,10 @@ transform: scale(1.2);
     justify-content: center;
     gap: 30px;
     margin-bottom: 8%;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 }
 
 .european-btn
@@ -302,6 +368,7 @@ transform: scale(1.2);
     background-color: #006dfc9d;
     transition:  color 1.5s ease, transform 0.7s ease; /* Fixed 'transform' */
 }
+<<<<<<< HEAD
 .european-container1 .european .ku
 {
     width: 550px;
@@ -311,6 +378,9 @@ transform: scale(1.2);
     right: -23%;
     top: -7%;
 }
+=======
+
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 /* Font styling for each container */
 .kcontainer1, .head2 {
     font-size: 18px;
@@ -388,6 +458,7 @@ transform: scale(1.2);
 .kcontainer4:hover{
 transform: scale(1.2);
 }
+<<<<<<< HEAD
 
 
 
@@ -417,3 +488,5 @@ transform: scale(1.2);
         opacity: 1;
     }
 }
+=======
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02

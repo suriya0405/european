@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/ContactUs1.css';
+<<<<<<< HEAD
 import twitter from '../img/X logo PNG for web (1).png'
 import fb from '../img/Facebook logo PNG for web.png'
 import insta from '../img/Instagram logo PNG for web.png'
@@ -12,6 +13,17 @@ function ContactUs() {
         <div className="contact-us-container">
             {/* Left Section: Contact Form */}
            
+=======
+import youtube from '../img/Youtube logo PNG.png';
+import X from '../img/X logo PNG.png';
+import fb from '../img/Facebook logo PNG.png';
+import insta from '../img/Instagram logo PNG.png';
+
+function ContactUs1() {
+    return (
+        <div className="contact-us-container">
+            {/* Left Section: Contact Form */}
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
             <div className="contact-form-section">
                 <h2 className="form-title">Get in Touch</h2>
                 <form className="contact-form">
@@ -27,6 +39,11 @@ function ContactUs() {
                     <label>WhatsApp Number</label>
                     <input type="number" required />
 
+<<<<<<< HEAD
+=======
+                    <label>NEET Score</label>
+                    <input type="number" required />
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
                     <label>What do you have in mind?</label>
                     <textarea placeholder="Please enter your thoughts..."></textarea>
@@ -51,10 +68,17 @@ function ContactUs() {
                         No 810, B Block, Hili tower, Al nadha, Sharjah, UAE.</p>
                 </div>
                 <div className="social-icons">
+<<<<<<< HEAD
                     <a href="#" className="social-icon"><img alt='' src={twitter} /></a> {/* Twitter Icon */}
                     <a href="#" className="social-icon"><img alt='' src={fb} /></a> {/* Facebook Icon */}
                     <a href="#" className="social-icon"><img alt='' src={youtube} /></a> {/* Google Icon */}
                     <a href="#" className="social-icon"><img alt='' src={insta} /></a> {/* Instagram Icon */}
+=======
+                    <a href="https://twitter.com/Royalnextoff" className="social-icon"><img className='image' src={X} /></a> {/* Twitter Icon */}
+                    <a href="https://www.facebook.com/royalglonextacademy" className="social-icon"><img className='image' src={fb} /></a> {/* Facebook Icon */}
+                    <a href="https://www.youtube.com/channel/UCXEIdPJUowws2aQ58rFv72A" className="social-icon" ><img className='image' src={youtube} /></a> {/* Google Icon */}
+                    <a href="https://www.instagram.com/royalglonextacademy/?hl=en" className="social-icon"><img className='image' src={insta} /></a> {/* Instagram Icon */}
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
                 </div>
 
                 <div className="map-container">
@@ -82,4 +106,8 @@ function ContactUs() {
     );
 }
 
+<<<<<<< HEAD
 export default ContactUs;
+=======
+export default ContactUs1;
+>>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
