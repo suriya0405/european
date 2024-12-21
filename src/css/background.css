@@ -1,0 +1,356 @@
+/* Container and Button Style */
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, rgb(246, 246, 248), rgb(255, 255, 255));
+  padding: 8%;
+ 
+}
+.homecontent-container{
+  height: 430px;
+  padding-left: 5%;
+}
+.dr-img
+{
+  position: absolute;
+  left: 8%;
+  margin-top: 29%;
+  background-color: rgb(255, 205,  5);
+  height: 50px;
+  color: #2a3070;
+  font-weight: 650;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.img-holder {
+  width: 25%;
+}
+
+.text-overlay {
+  width: 100%;
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  padding-left: 3%;
+  font-size: 15px;
+  text-align: left;
+}
+
+  .line-A {
+    width: 21%;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.733);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.line-p
+{
+  width: 95%;
+  border-top: 0.1rem solid rgba(255, 205, 5);
+  margin-top: 20px;
+}
+.rectangle
+{
+  width: 2%;
+    height: 70%;
+    background-color: #2a3070;
+    z-index: 0;
+    position: absolute;
+    left: 87px;
+}
+.rectangle1
+{
+  width: 2%;
+    height: 67%;
+    background-color: rgb(255, 255, 255);
+    z-index: 0;
+    position: absolute;
+    left: 100px;
+}
+
+.rectangle2
+{
+  width: 2%;
+    height: 70%;
+    background-color: #2a3070;
+    z-index: 0;
+    position: absolute;
+    left: 800px;
+}
+.rectangle13
+{
+  width: 2%;
+    height: 67%;
+    background-color: rgb(255, 255, 255);
+    z-index: 0;
+    position: absolute;
+    left: 900px;
+}
+.text-overlay p {
+  margin-top: 7%;
+  color: rgba(0, 0, 71, 0.973);
+  width: 90%;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.text-overlay h1 {
+  font-weight: 700;
+  color: #2a3070;
+}
+
+.paragraph {
+  display: flex;
+}
+
+.read-more {
+  background-color: rgb(0, 0, 71);
+  color: #ffffff;
+  padding: 2%;
+  border-style: none;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+/* Apply For Admission Section */
+
+
+.apply
+{
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+.apply-container {
+  height: 450px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #535f80;
+  display: flex;
+  justify-content: center;
+  transition: box-shadow 0.4s ease;
+}
+
+
+.apply-container h1 {
+  font-size: 38px;
+  color: rgb(255, 205,  5);
+}
+
+.apply-container-para
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify ;
+  font-size: 14px;
+  
+}
+
+.apply-container p {
+  width: 73%;
+  color: rgba(255, 255, 255, 0.973);
+  padding: 2px;
+  margin-top: 4px;
+  text-align: justify;
+}
+
+/* Animated Apply Button */
+.apply-btn {
+  
+  color: #2a3070; /* Oxford Blue text */
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 150px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.4s ease; /* Smooth transition */
+  font-weight: 600;
+  border: none;
+  margin-top: 5%;
+}
+
+
+.line1
+{
+  border-bottom:0.1rem solid #ffffff;
+  width: 5%;
+  position: relative;
+  top: 11%;
+  right: 15%;
+  transform: border-bottom;
+}
+
+.line2
+{
+  border-bottom:0.1rem solid #ffffff;
+  width: 3%;
+  position: relative;
+  top: -5%; 
+}
+
+.apply-btn:hover::before {
+  width: 50%;
+}
+
+.apply-btn:hover::after {
+  width: 50%;
+}
+
+.apply-btn:hover {
+  color: #2a3070;
+  background-color: rgb(255, 205,  5);
+  transition: all 0.4s ease; /* Smooth transition */
+}
+.img-holder-apply img
+{
+  width: 630px;
+  height: 450px;
+}
+
+
+
+
+
+
+
+/* General Responsive Styles */
+@media (max-width: 1024px) {
+  /* Apply container adjustments for tablets */
+  .apply {
+    flex-direction: column;
+    padding: 3%;
+  }
+  
+  .apply-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .apply-container h1 {
+    font-size: 32px;
+  }
+
+  .apply-container p {
+    width: 90%;
+  }
+
+  .apply-btn {
+    width: 100%;
+  }
+
+  .img-holder-apply img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further adjustments for mobile view */
+  .home-container {
+    flex-direction: column;
+    padding: 10%;
+  }
+
+  .img-holder {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .text-overlay {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .line, .line-A {
+    width: 100%;
+  }
+
+  .paragraph {
+    flex-direction: column;
+  }
+
+  .apply {
+    padding: 3%;
+  }
+
+  .apply-container {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .apply-container h1 {
+    font-size: 28px;
+  }
+
+  .apply-container p {
+    width: 100%;
+  }
+
+  .img-holder-apply img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for small mobile screens */
+  .home-container {
+    padding: 5%;
+  }
+  .text-overlay p
+  {
+    width: 100%;
+    font-size: 14px;
+  }
+  .img-holder {
+    width: 98%;
+    margin-bottom: 10px;
+  }
+  .text-overlay h1 {
+    font-size: 34px;
+  }
+  .apply-container h1 {
+    font-size: 22px;
+  }
+  .apply-container p {
+    width: 100%;
+    font-size: 13px;
+  }
+  .apply-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 100%;
+  }
+
+  .img-holder-apply img {
+    width: 100%;
+    height: auto;
+  }
+  .apply
+  {
+    flex-direction: column-reverse;
+    padding: 20px;
+    gap: 40px;
+  }
+}

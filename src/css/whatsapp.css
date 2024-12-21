@@ -1,0 +1,17 @@
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  
+  .whatsapp-link:hover {
+    transform: scale(1.1); 
+  }

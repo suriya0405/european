@@ -1,0 +1,160 @@
+.footer {
+    background: #1e3651;
+    color: white;
+    padding-left: 0%;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribute columns evenly */
+    padding-bottom: 50px;
+
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer .location,
+.footer .about-company{
+    flex: 1;
+    /* Ensures equal spacing across columns */
+    min-width: 250px;
+    font-size: 14px;
+    position: relative;
+    /* Minimum width to keep items aligned on smaller screens */
+}
+
+.footer .location
+{
+    left: 100px;
+}
+
+.footer .links{
+    flex: 1;
+    /* Ensures equal spacing across columns */
+    min-width: 100px;
+    font-size: 14px;
+    position: relative;
+    left: 200px;
+    /* Minimum width to keep items aligned on smaller screens */
+}
+
+
+.about-company h4 p {
+   text-align: left;
+    /* Center the About Us section */
+    
+}
+
+.footer .about-company h2,
+.footer .about-company p {
+    text-align: center;
+    /* Center text within the About Us section */
+}
+
+.footer .links {
+    text-align: end;
+    /* Align Links section to the right */
+}
+
+.footer .links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.footer .links li a {
+    color: #989899;
+    transition: color 0.2s;
+   
+}
+
+.footer .links li a:hover {
+    text-decoration: none;
+    color: #4180CB;
+}
+
+.footer .social-media a {
+    color: white;
+    margin-right: 10px;
+    transition: color 0.2s;
+}
+.social-media a i
+{
+    width: 40px;
+    font-size: 20px;
+}
+.footer .social-media a:hover {
+    color: #4180CB;
+}
+
+.footer .copyright p {
+    border-top: 1px solid rgb(225, 211, 211);
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+    .footer .container,
+    .footer .row {
+        flex-direction: column;
+        /* Stack columns on smaller screens */
+        align-items: center;
+        /* Center all columns */
+    }
+
+    .footer .location,
+    .footer .about-company,
+    .footer .links {
+        text-align: center;
+        /* Center text on smaller screens */
+    }
+    .footer .location
+    {
+        position: relative;
+        left: 0px;
+        width: 300px;
+    }
+    .footer .links
+    {
+        position: relative;
+        left: 0px;
+        width: 300px;
+    }
+}
+
+.copyright p {
+    text-align: center;
+    width: 100vw;
+
+
+}
+
+.location h2,
+p {
+    text-align: left;
+}
+
+.links ul li,
+h4 {
+    text-align: left;
+}
+
+.about-company h2,
+p {
+    text-align: left;
+}
+
+.social-media {
+    padding-bottom: 2%;
+}

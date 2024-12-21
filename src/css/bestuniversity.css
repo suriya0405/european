@@ -1,0 +1,17 @@
+.home-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content img{
+    width: 50%;
+    height: auto;
+}
+
+.content-container
+{
+    width: 50%;
+    background-color: rgb(138, 130, 236);
+}

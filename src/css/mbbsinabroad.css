@@ -1,0 +1,181 @@
+.mb-imgholder {
+    position: relative;
+    width: fit-content;
+    height: 50%;
+  }
+
+  .mbbs
+  {
+    background-color: rgb(233, 246, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mb-text {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    color: white; /* Choose a color that contrasts with the image */
+    padding: 5px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+  }
+
+  .line
+  {
+    border-bottom: -0.1rem solid #8a8a8a;
+   margin-top: 3%;
+   width: 90%;
+  }
+  
+.scroll-text
+{
+   position: absolute;
+   color: aliceblue;
+   z-index: 1;
+   top: 70%; /* Adjust as needed */
+   left: 50%; 
+   white-space: nowrap;
+   animation: scroll 25s linear infinite; /* Adjust speed with 15s */
+   font-size: 30px;
+   font-weight: bold;
+   color: #fff;
+   padding-top: 5%;
+   padding-bottom: 0px;
+  font-weight: 300;
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .mb-imgholder img {
+    display: block;
+    max-width: 100%; /* Responsive image */
+    height: auto;
+  }
+  .yellow
+  {
+    color: rgb(233, 12, 12);
+  }
+
+  .container-holder
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    height: 408px;
+    padding: 5%;
+  }
+  .container-holder .abroad
+  {
+    width: 34%;
+    height: 330px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .abroad p
+  {
+    font-weight: 500;
+
+  }
+  .abroad .dropdown
+  {
+    position: relative;
+  }
+  .universities {
+    gap: 20px; /* Space between each university item */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical overflow */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    scroll-snap-type: x mandatory; /* Optional for smooth scrolling */
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.universities .university {
+    flex: 0 0 auto; /* Ensures each item stays at its set width */
+    width: 300px; /* Set a fixed width for each item */
+    height: 280px;
+    background-color: rgb(173, 204, 216);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 5px;
+}
+.mbbs h2{
+  color: rgb(25, 0, 65);
+}
+
+.universities .university span
+{
+ border: 0.1rem solid #fff;
+ padding: 2%;
+ border-radius: 5px;
+ color: #fff;
+}
+.universities::-webkit-scrollbar {
+  height: 8px; /* Height of horizontal scrollbar */
+}
+
+.universities::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); /* Scrollbar thumb color */
+  border-radius: 10px;
+}
+
+.universities::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Scrollbar track color */
+}
+  .universities .university img
+  {
+    width: 50%;
+
+  }
+
+  .mbbs-content
+  {
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+
+  .mbbs-container
+  {
+    width: 80%;
+    height: 500px;
+    background:url(../img/5072616.jpg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    color: #fff;
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center;
+  }

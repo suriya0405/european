@@ -1,0 +1,54 @@
+{
+    "MBBS IN GEORGIA": [
+      {
+        "Id":"1", 
+        "name": "European University",
+        "location": "Tbilisi, Georgia",
+        "city": "Tbilisi",
+        "programs": [
+          {
+            "name": "MBBS",
+            "duration": "6 years",
+            "language": "English",
+            "accreditation": ["WHO", "NMC", "FAIMER"],
+            "tuitionFee": {
+              "amount": 5000,
+              "currency": "USD",
+              "per": "year"
+            },
+            "description": "European University Georgia offers a 6-year MBBS program with a modern curriculum focused on international standards."
+          }
+        ],
+        "website": "https://europeanuniversity.ge",
+        "contact": {
+          "email": "info@europeanuniversity.ge",
+          "phone": "+995 322 000000"
+        }
+      },
+      { "Id":"2",
+        "name": "Kutaisi International University",
+        "location": "Kutaisi, Georgia",
+        "city": "Kutaisi",
+        "programs": [
+          {
+            "name": "MBBS",
+            "duration": "6 years",
+            "language": "English",
+            "accreditation": ["WHO", "NMC", "WFME"],
+            "tuitionFee": {
+              "amount": 4500,
+              "currency": "USD",
+              "per": "year"
+            },
+            "description": "Kutaisi International University provides an English-taught MBBS program with advanced medical training."
+          }
+        ],
+        "website": "https://kiu.edu.ge",
+        "contact": {
+          "email": "admissions@kiu.edu.ge",
+          "phone": "+995 431 000000"
+        }
+      }
+    ]
+  }
+  

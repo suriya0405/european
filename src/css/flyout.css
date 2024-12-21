@@ -1,0 +1,228 @@
+
+
+.flyout-container {
+    position: relative;
+  }
+  
+  .flyout-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .flyout-text {
+    width: 200px;
+    height: auto;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 0px;
+    right: -275px;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: block; /* Ensure it's displayed */
+  }
+  .flyout-text p{
+    position: relative;
+    top: 120px;
+  }
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .menus div{
+    width: 78px;
+    height: 108px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.home:hover{
+    
+}
+.menus div img
+{
+    width: 45px;
+    height: 45px;
+   border-radius: 50%;
+ 
+}
+.home-gif,.contact-gif,.about-gif
+{
+ 
+}
+.menu-item span{
+  font-size: 14px;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+.home{
+    background-color: #50c5ff;
+}
+.contact
+{
+    background-color: #3399ff;
+}
+.about
+{
+    background-color: #0066cc;
+}
+.hostal
+{
+    background-color: #003399;
+}
+.gallery{
+    background-color: #000049;
+}
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    left: -75px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    color: white;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+  .tooltip a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+  .home-tooltip
+  {
+    position: absolute;
+    top: 9px;
+    background-color: #50c5ff;
+   
+  }
+  .contact-tooltip{
+    position: absolute;
+    top: 115px;
+    background-color: #3399ff;
+  }
+  @media(max-width:768px)
+  {
+    .contact-tooltip
+    {
+      top: 57px;
+    }
+    .menu-item span{
+      font-size: 12px;
+      margin-right: 35px;
+    }
+    .menus div img
+    {
+      border: 0.1rem solid #000049;
+    }
+  }
+  .about-tooltip{
+    position: absolute;
+    top: 225px;
+    background-color: #0066cc;
+  }
+  @media(max-width:768px)
+  {
+    .about-tooltip
+    {
+      top: 107px;
+    }
+  }
+  .hostel-tooltip{
+    position: absolute;
+    top: 334px;
+    background-color: #003399;
+  }
+  @media (max-width:768px)
+  {
+    .hostel-tooltip
+    {
+      top: 160px;
+    }
+  }
+  .gallery-tooltip{
+    position: absolute;
+    top: 438px;
+    background-color: #000049;
+  }
+  @media (max-width:768px)
+  {
+    .gallery-tooltip
+    {
+      top: 207px;
+    }
+  }
+  /* Show tooltip on hover with smooth transition */
+  .menu-item:hover .tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .home-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .contact-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .about-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .hostel-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-item:hover .gallery-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  @media (max-width: 600px) {
+    .tooltip {
+      display: none;
+    }
+
+    .flyout-text {
+      position: fixed;
+      bottom: 180px;
+      right: -80px;
+      gap: 5px;
+      flex-direction: row;
+    }
+  
+    /* Menu Item Adjustments */
+    .menus .menu-item {
+      width: 50px;
+      height: 50px;
+      margin-left: 10px;
+    }
+    .menus div
+    {
+      width: 50px;
+      height: 50px;
+      margin-left: 40px;
+    }
+    /* Smaller Icon Size */
+    .menus .menu-item img {
+      width: 25px;
+      height: 25px;
+      
+    }
+  }

@@ -1,0 +1,105 @@
+
+section {
+    text-align: center;
+    display: flex;
+  justify-content: center; /* Aligns items horizontally */
+  gap: 20px; /* Adds spacing between items */
+  margin: 10px auto;
+  padding-right: 2%;
+  }
+  
+  .item {
+   
+    margin: 15px;
+    width: 255px;
+    height: 255px;
+    background-color: #f0f0f0;
+    border-radius:13%;
+    box-shadow: 
+      inset -200px -270px 0 #191f66, 
+      inset 200px -290px 0 rgb(28, 80, 253), 
+      inset -200px 200px 0 rgb(25, 255, 56), 
+      inset 200px 200px 0 rgb(255, 187, 0), 
+      0 0 20px silver;
+    transition: box-shadow ease-in-out 0.6s;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .item img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 0px;
+    transition: opacity 0.3s ease;
+    box-shadow: 4px 0px 10px #ffffffc0;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .item:hover {
+    box-shadow: 
+      inset 0 0 0 transparent, 
+      inset 0 0 0 transparent, 
+      inset 0 0 0 transparent, 
+      inset 0 0 0 transparent, 
+      0 0 20px silver;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .headeres {
+    font-size: 19px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .descriptiones {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s ease;
+    width: 80%;
+    font-weight: 500;
+  }
+  
+  .item:hover .header {
+    opacity: 0;
+  }
+  .item:hover img {
+    opacity: 0;
+  }
+  .item:hover .description {
+    opacity: 1;
+  }
+  @media (max-width: 768px) {
+    .item {
+      width: 190px;
+      height: 190px;
+      margin: 10px;
+      border-radius: 15%;
+    }
+  
+    .headeres {
+      font-size: 18px;
+    }
+  
+    .descriptiones {
+      font-size: 14px;
+    }
+  }
