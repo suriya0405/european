@@ -54,7 +54,7 @@ loadFonts();
 function App() {
   return (
     <div className="App">
-       {/* <Router>
+      <Router>
         <Topbar />
        
         <Routes>
@@ -66,9 +66,7 @@ function App() {
         </Routes>
         <Homeyoutube />
         <Footer1 />
-      </Router>      */}
-     
-      <Useeffect />
+      </Router>     
 
     </div>
   );
