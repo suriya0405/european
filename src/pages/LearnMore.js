@@ -6,29 +6,10 @@ import '../css/LearnMore.css';
 const LearnMore = () => {
   return (
     <div className='split-pane-container'>
-<<<<<<< HEAD
         <div className='split-pane uiux-side'>
           <div className='area-container'>
         <SimpleBar className="area" style={{ height: '100vh' }}>
             <div className='content'>
-=======
-        {/* UI/UX Side with NEET Program Details */}
-        <div className='split-pane uiux-side'>
-          <div className='area-container'>
-        <SimpleBar className="area" style={{ height: '100vh' }}>
-          
-
-            <div className='content'>
-                {/* <div className='text-content'>
-                    <div className="bold">You want</div>
-                    <div className='big'>UI/UX?</div>
-                </div>
-                <button>
-                    SHOW ME THE DESIGN
-                </button> */}
-
-                {/* NEET Program Details Section */}
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
                 <div className='text-content'>
                     <div className='program-details'>
                         <h3>NEET Coaching</h3>

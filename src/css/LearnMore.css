@@ -52,26 +52,6 @@
             background-image: url('../img/Background\ -\ 960x1080\ \(1\).png');
         }
 }
-<<<<<<< HEAD
-=======
-button,
-.button {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
-
-button:hover,
-.button:hover {
-    background-color: white;
-    color: rgb(0, 0, 0);
-}
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
 .program-details {
     background-color: transparent;
@@ -160,16 +140,7 @@ button:hover,
         font-size: 1.8rem;
     }
 
-<<<<<<< HEAD
  
-=======
-    /* Adjust button size for mobile */
-    button,
-    .button {
-        font-size: 0.8rem;
-        padding: 8px 15px;
-    }
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
 
     /* Program details should take full width on mobile */
     .program-details {
@@ -188,7 +159,6 @@ button:hover,
 
 .area {
     background: rgba(255, 255, 255, 0.274);
-<<<<<<< HEAD
     width: 45vw !important;
     height: 100%; 
     overflow: auto; 
@@ -196,20 +166,6 @@ button:hover,
     gap: 30px;
 }
 
-=======
-    width: 600px; /* or any other value */
-    height: 100%; /* Set a specific height */
-    overflow: auto; /* Ensure overflow is set */
-}
-  
-@media(max-height:768px)
-{
-    .area
-    {
-        width: 350px;
-    }
-}
->>>>>>> 0ffd255e26c3287438be32ec5aa80a67b62a2f02
   .ss-wrapper {
     overflow: hidden;
     height: 100%;
